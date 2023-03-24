@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+       
+}
+
+    /*        GENERALES        */
+
+       
+
+body{
+    background-color: #a7b7b4; 
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    padding-bottom: 2em;
+    min-height: 100vh;
+}
+
+.bi-box-arrow-in-left {
+    color: black;
+    
+}
+
+
+
+
+
+/* HEADER */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    border-radius: 3px;
+    margin: 0.5em;
+    background-color: white;
+    
+   
+}
+
+.logo__img {
+    padding: 0.3em 0.3em;
+}
+
+
+
+/* MENU NAVEGACION */
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    
+   
+    
+     
+}
+.menu :hover{
+    color: black;
+    
+}
+
+.menu__item{
+    text-decoration: none;
+    color: #1e665c;
+    
+}
+
+.sectionProductos {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.1em;
+    margin: 0em 0.5em 0.5em 0.5em;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.5em 1.5em ;
+}
+
+.resetBS {
+    padding: 0;
+    margin: 0;
+}
+
+#flechaAtras{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+/* BARRA BUSCADORA */
+
+
+
+.header__barra input {
+    padding-left: 4%;
+    color: black;
+    width: 35em;
+    height: 2em;
+    border: 2px solid #1e665c;
+    border-radius: 50px;
+    outline: none;
+    
+
+}
+
+/* CENTRO DE PAGINA */
+ 
+.centro {
+    display: flex;
+    justify-content: center;
+    margin: 0em 0.5em 0.5em 0.5em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.galeriacontainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 1.3em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  
+}
+
+.card {
+    width: 18rem;
+}
+
+.btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #a7b6b4;
+    --bs-btn-border-color: #a7b6b4;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1e665c;
+    --bs-btn-hover-border-color: #1e665c;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1e665c;
+    --bs-btn-active-border-color: #1e665c;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #a7b6b4;
+    --bs-btn-disabled-border-color: #a7b6b4;
+}
+    /* COMO LLEGAR */
+
+    #mapa {
+        align-items: center;
+    }
+    
+    /* CONTACTO */
+    
+    .sectionContacto {
+        display: flex; 
+        flex-direction: column;
+        gap: 0.1em;
+        margin: 0em 0.5em 0.5em 0.5em;
+        background-color: white;
+        border-radius: 3px;
+        padding: 0.5em 1.5em ;
+        align-items: center;
+    }
+    #botoncontacto {
+        margin-top: 0.5em;
+    }
+
+    .placeholder__form input {
+        padding-left: 4%;
+        color: black;
+        width: 15em;
+        height: 2em;
+        border: 2px solid #1e665c;
+        border-radius: 3px;
+        outline: none;
+        
+    
+    }
+
+/* INDUSTRIA URUGUAYA */
+
+.industria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0em 0.5em 0.5em 0.5em;
+    border-radius: 3px;
+    background-color: white;
+
+}
+
+.industria__img {
+    width: 100px;
+    height: auto;
+}
+
+.industria__text {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1e665c;
+   margin: 0;
+}
+
+/* CARRUSEL */
+
+#carouselExampleFade{
+    background-color: white;
+}
+
+
+
+
+/* QUIENES SOMOS */
+
+.quienes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0.5em 0.5em 0 0.5em;
+    border-radius: 3px;
+    padding: 0.5em;
+    background-color: white;
+       
+}
+
+.quienes__titulo {
+    color: #1e665c;
+    margin: 0;
+}
+
+.quienes__texto {
+    color: #1e665c;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+/* FOOTER */
+
+
+.footer {
+    display: flex;
+    color: black;
+    border-top: 1px solid black;
+    padding: 0.1em;
+    margin-top: 0.5em;
+    justify-content:  center;
+    gap: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #a7b7b4;
+    
+    
+
+}
+
+
+.footer__iconos {
+    display: flex;
+    gap: 1em;
+}
+
+.footer__redes{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer__creditos {
+    position: absolute;
+    right: 1%;
+    
+
+}
+ .footer__creditostexto {
+    margin: 0;
+ }
+ 
+ .footer__copy {
+    margin: 0;
+ }
+
+/* MEDIA QUERIES */
+/* MOBILE */
+
+
+
+@media only screen and (max-width: 576px) {
+
+    /* Estilos generales */
+
+    .header {
+        flex-direction: column; 
+    }
+    .header__barra input {
+        width: 20em;
+    }
+
+
+
+    .footer__copy{
+        font-size: 8px;
+    }
+    .footer__creditostexto{
+        font-size: 8px;
+    }
+    .footer__redes{
+        font-size: 8px;
+    }
+
+    
+
+    /* INDEX */
+
+    .centro__img {
+        width: 100%;
+    }
+
+    .industria__img {
+        width: 45px;
+    }
+    .industria__text {
+        font-size: 20px;
+    }
+
+    .quienes__texto {
+        font-size: 12px;
+    }
+    .quienes__titulo{
+        font-size: 30px;
+    }
+
+    /* PRODUCTOS */
+
+    .galeriacontainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 2px
+    }
+    .card {
+        width: 16rem;
+    }
+
+    /* COMO LLEGAR */
+
+    .iframemapa {
+        width: 540px;
+    }
+}
