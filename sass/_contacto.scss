@@ -1,0 +1,28 @@
+.sectionContacto {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.1em;
+    margin: 0em 0.5em 0.5em 0.5em;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.5em 1.5em ;
+    align-items: center;
+
+    #botoncontacto {
+        margin-top: 0.5em;
+    }
+    
+    .placeholder__form{
+        input {
+            padding-left: 4%;
+            color: black;
+            width: 15em;
+            height: 2em;
+            border: 2px solid #1e665c;
+            border-radius: 3px;
+            outline: none;
+        }
+    }
+}
+
+

@@ -1,0 +1,60 @@
+/* CENTRO DE PAGINA */
+
+.centro {
+    display: flex;
+    justify-content: center;
+    margin: 0em 0.5em 0.5em 0.5em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* INDUSTRIA URUGUAYA */
+
+.industria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0em 0.5em 0.5em 0.5em;
+    border-radius: 3px;
+    background-color: white;
+
+    .industria__img {
+        width: 100px;
+        height: auto;
+    }
+
+    .industria__text {
+        font-size: 2em;
+        font-weight: bold;
+        color: #1e665c;
+       margin: 0;
+    }
+}
+
+
+/* QUIENES SOMOS */
+
+.quienes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0.5em 0.5em 0 0.5em;
+    border-radius: 3px;
+    padding: 0.5em;
+    background-color: white;
+
+    .quienes__titulo {
+        color: #1e665c;
+        margin: 0;
+    }
+
+    .quienes__texto {
+        color: #1e665c;
+        font-size: 1.2em;
+        margin: 0;
+    }
+       
+}

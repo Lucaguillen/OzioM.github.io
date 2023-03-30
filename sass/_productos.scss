@@ -1,0 +1,44 @@
+/* NAV PRODUCTOS */
+
+.sectionProductos {
+    display: flex; 
+    flex-direction: column;
+    gap: 0.1em;
+    margin: 0em 0.5em 0.5em 0.5em;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0.5em 1.5em ;
+
+    .menu {
+
+        #flechaAtras{
+            display: flex;
+            align-items: center;
+
+            .bi-box-arrow-in-left {
+                color: black;
+                
+            }
+            
+        }
+
+    }
+}
+
+/* GALERIA */
+
+.galeriacontainer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 1.3em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .card {
+        width: 18rem;
+    }
+  
+}
+
+
