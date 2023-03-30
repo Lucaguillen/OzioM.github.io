@@ -226,13 +226,13 @@ body {
     width: 20em;
   }
   .footer__copy {
-    font-size: 8px;
+    font-size: 10px;
   }
   .footer__creditostexto {
     font-size: 8px;
   }
-  .footer__redes {
-    font-size: 8px;
+  .footer__iconos .footer__redes {
+    font-size: 10px;
   }
   /* INDEX */
   .centro__img {

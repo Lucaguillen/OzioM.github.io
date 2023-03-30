@@ -104,9 +104,12 @@ body{
 
         .footer__redes{
             text-decoration: none;
-            color: black;  
+            color: black;
+                
         }
     }
+
+    
 
     .footer__copy {
         margin: 0;
@@ -152,14 +155,20 @@ body{
 
 
     .footer__copy{
-        font-size: 8px;
+        font-size: 10px;
     }
     .footer__creditostexto{
         font-size: 8px;
     }
-    .footer__redes{
-        font-size: 8px;
+
+    .footer__iconos{
+        
+        .footer__redes{
+            font-size: 10px;
+        }
+
     }
+    
 
     
 
