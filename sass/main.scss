@@ -61,6 +61,7 @@ body{
     font-size: 1.3em;
     margin: 0;
     padding: 0;
+    transition: 0.1s ease all;
 
     .menu__item{
         text-decoration: none;
@@ -71,6 +72,7 @@ body{
 
 .menu :hover{
     color: $col3;
+    transform: scale(1.03);
     
 }
 
@@ -209,7 +211,7 @@ body{
         grid-row-gap: 2px;
 
         .card {
-            width: 16rem;
+            width: 15rem;
         }
   
     }

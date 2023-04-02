@@ -36,9 +36,15 @@
     grid-row-gap: 1.3em;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding-top: 20px;
 
     .card {
         width: 18rem;
+        transition: 0.1s ease all;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
     }
   
 }

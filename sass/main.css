@@ -106,9 +106,14 @@
   grid-row-gap: 1.3em;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  padding-top: 20px;
 }
 .galeriacontainer .card {
   width: 18rem;
+  transition: 0.1s ease all;
+}
+.galeriacontainer .card:hover {
+  transform: scale(1.05);
 }
 
 /* variables */
@@ -159,6 +164,7 @@ body {
   font-size: 1.3em;
   margin: 0;
   padding: 0;
+  transition: 0.1s ease all;
 }
 .menu .menu__item {
   text-decoration: none;
@@ -167,6 +173,7 @@ body {
 
 .menu :hover {
   color: #000000;
+  transform: scale(1.03);
 }
 
 /* FOOTER */
@@ -263,7 +270,7 @@ body {
     grid-row-gap: 2px;
   }
   .galeriacontainer .card {
-    width: 16rem;
+    width: 15rem;
   }
   /* COMO LLEGAR */
   .iframemapa {
