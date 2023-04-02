@@ -1,7 +1,8 @@
 @import "index";
 @import "contacto";
-@import"comollegar";
+@import "comollegar";
 @import "productos";
+@import "variables";
 
 /* GENERALES */
 
@@ -12,7 +13,7 @@
 }
 
 body{
-    background-color: #a7b7b4; 
+    background-color: $col1; 
     font-family: 'Lato', sans-serif;
     position: relative;
     padding-bottom: 2em;
@@ -26,9 +27,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5em;
-    border-radius: 3px;
+    border-radius: $border;
     margin: 0.5em;
-    background-color: white;
+    background-color: $col4;
 
     .logo__img {
         padding: 0.3em 0.3em;
@@ -41,10 +42,10 @@ body{
     
     input {
         padding-left: 4%;
-        color: black;
+        color: $col3;
         width: 35em;
         height: 2em;
-        border: 2px solid #1e665c;
+        border: 2px solid $col2;
         border-radius: 50px;
         outline: none;
     }
@@ -63,13 +64,13 @@ body{
 
     .menu__item{
         text-decoration: none;
-        color: #1e665c;
+        color: $col2;
     }   
      
 }
 
 .menu :hover{
-    color: black;
+    color: $col3;
     
 }
 
@@ -78,8 +79,8 @@ body{
 
 .footer {
     display: flex;
-    color: black;
-    border-top: 1px solid black;
+    color: $col3;
+    border-top: 1px solid $col3;
     padding: 0.1em;
     margin-top: 0.5em;
     justify-content:  center;
@@ -87,7 +88,7 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #a7b7b4;
+    background-color: $col1;
 
     .footer__creditos {
         position: absolute;
@@ -104,7 +105,7 @@ body{
 
         .footer__redes{
             text-decoration: none;
-            color: black;
+            color: $col3;
                 
         }
     }
@@ -120,20 +121,20 @@ body{
 /* BS */
  
 .btn-primary{
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #a7b6b4;
-    --bs-btn-border-color: #a7b6b4;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #1e665c;
-    --bs-btn-hover-border-color: #1e665c;
+    --bs-btn-color: #{$col4};
+    --bs-btn-bg: #{$col1};
+    --bs-btn-border-color: #{$col1};
+    --bs-btn-hover-color: #{$col4};
+    --bs-btn-hover-bg: #{$col2};
+    --bs-btn-hover-border-color: #{$col2};
     --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #1e665c;
-    --bs-btn-active-border-color: #1e665c;
+    --bs-btn-active-color: #{$col4};
+    --bs-btn-active-bg: #{$col2};
+    --bs-btn-active-border-color: #{$col2};
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #a7b6b4;
-    --bs-btn-disabled-border-color: #a7b6b4;
+    --bs-btn-disabled-color: #{$col4};
+    --bs-btn-disabled-bg: #{$col1};
+    --bs-btn-disabled-border-color: #{$col1};
 }
 
 
@@ -178,12 +179,20 @@ body{
         width: 100%;
     }
 
-    .industria__img {
-        width: 45px;
+    .industria{
+
+        .industria__img {
+            width: 45px;
+            height: 30px;
+        }
+
+        .industria__text {
+            font-size: 20px;
+        }
+
     }
-    .industria__text {
-        font-size: 20px;
-    }
+    
+
 
     .quienes__texto {
         font-size: 12px;

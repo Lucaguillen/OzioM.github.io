@@ -1,12 +1,14 @@
+@import "variables";
+
 /* NAV PRODUCTOS */
 
 .sectionProductos {
     display: flex; 
     flex-direction: column;
     gap: 0.1em;
-    margin: 0em 0.5em 0.5em 0.5em;
-    background-color: white;
-    border-radius: 3px;
+    margin: $marginSections;
+    background-color: $col4;
+    border-radius: $border;
     padding: 0.5em 1.5em ;
 
     .menu {
@@ -16,7 +18,7 @@
             align-items: center;
 
             .bi-box-arrow-in-left {
-                color: black;
+                color: $col3;
                 
             }
             

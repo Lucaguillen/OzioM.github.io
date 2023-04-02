@@ -1,10 +1,11 @@
+/* variables */
 /* CENTRO DE PAGINA */
 .centro {
   display: flex;
   justify-content: center;
   margin: 0em 0.5em 0.5em 0.5em;
   padding: 1em;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 3px;
 }
 
@@ -16,11 +17,11 @@
   gap: 1em;
   margin: 0em 0.5em 0.5em 0.5em;
   border-radius: 3px;
-  background-color: white;
+  background-color: #ffffff;
 }
 .industria .industria__img {
   width: 100px;
-  height: auto;
+  height: 66px;
 }
 .industria .industria__text {
   font-size: 2em;
@@ -34,10 +35,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5em 0.5em 0 0.5em;
+  margin: 0em 0.5em 0.5em 0.5em;
   border-radius: 3px;
   padding: 0.5em;
-  background-color: white;
+  background-color: #ffffff;
 }
 .quienes .quienes__titulo {
   color: #1e665c;
@@ -49,12 +50,13 @@
   margin: 0;
 }
 
+/* variables */
 .sectionContacto {
   display: flex;
   flex-direction: column;
   gap: 0.1em;
   margin: 0em 0.5em 0.5em 0.5em;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 3px;
   padding: 0.5em 1.5em;
   align-items: center;
@@ -64,7 +66,7 @@
 }
 .sectionContacto .placeholder__form input {
   padding-left: 4%;
-  color: black;
+  color: #000000;
   width: 15em;
   height: 2em;
   border: 2px solid #1e665c;
@@ -72,17 +74,19 @@
   outline: none;
 }
 
+/* variables */
 #mapa {
   align-items: center;
 }
 
+/* variables */
 /* NAV PRODUCTOS */
 .sectionProductos {
   display: flex;
   flex-direction: column;
   gap: 0.1em;
   margin: 0em 0.5em 0.5em 0.5em;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 3px;
   padding: 0.5em 1.5em;
 }
@@ -91,7 +95,7 @@
   align-items: center;
 }
 .sectionProductos .menu #flechaAtras .bi-box-arrow-in-left {
-  color: black;
+  color: #000000;
 }
 
 /* GALERIA */
@@ -107,6 +111,7 @@
   width: 18rem;
 }
 
+/* variables */
 /* GENERALES */
 * {
   padding: 0;
@@ -114,7 +119,7 @@
 }
 
 body {
-  background-color: #a7b7b4;
+  background-color: #a7b6b4;
   font-family: "Lato", sans-serif;
   position: relative;
   padding-bottom: 2em;
@@ -129,7 +134,7 @@ body {
   padding: 0 1.5em;
   border-radius: 3px;
   margin: 0.5em;
-  background-color: white;
+  background-color: #ffffff;
 }
 .header .logo__img {
   padding: 0.3em 0.3em;
@@ -138,7 +143,7 @@ body {
 /* BARRA BUSCADORA */
 .header__barra input {
   padding-left: 4%;
-  color: black;
+  color: #000000;
   width: 35em;
   height: 2em;
   border: 2px solid #1e665c;
@@ -161,14 +166,14 @@ body {
 }
 
 .menu :hover {
-  color: black;
+  color: #000000;
 }
 
 /* FOOTER */
 .footer {
   display: flex;
-  color: black;
-  border-top: 1px solid black;
+  color: #000000;
+  border-top: 1px solid #000000;
   padding: 0.1em;
   margin-top: 0.5em;
   justify-content: center;
@@ -176,7 +181,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #a7b7b4;
+  background-color: #a7b6b4;
 }
 .footer .footer__creditos {
   position: absolute;
@@ -191,7 +196,7 @@ body {
 }
 .footer .footer__iconos .footer__redes {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 .footer .footer__copy {
   margin: 0;
@@ -199,18 +204,18 @@ body {
 
 /* BS */
 .btn-primary {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #ffffff;
   --bs-btn-bg: #a7b6b4;
   --bs-btn-border-color: #a7b6b4;
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #ffffff;
   --bs-btn-hover-bg: #1e665c;
   --bs-btn-hover-border-color: #1e665c;
   --bs-btn-focus-shadow-rgb: 49,132,253;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #ffffff;
   --bs-btn-active-bg: #1e665c;
   --bs-btn-active-border-color: #1e665c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: #ffffff;
   --bs-btn-disabled-bg: #a7b6b4;
   --bs-btn-disabled-border-color: #a7b6b4;
 }
@@ -238,10 +243,11 @@ body {
   .centro__img {
     width: 100%;
   }
-  .industria__img {
+  .industria .industria__img {
     width: 45px;
+    height: 30px;
   }
-  .industria__text {
+  .industria .industria__text {
     font-size: 20px;
   }
   .quienes__texto {

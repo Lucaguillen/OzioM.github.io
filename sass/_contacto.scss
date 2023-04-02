@@ -1,10 +1,12 @@
+@import "variables";
+
 .sectionContacto {
     display: flex; 
     flex-direction: column;
     gap: 0.1em;
-    margin: 0em 0.5em 0.5em 0.5em;
-    background-color: white;
-    border-radius: 3px;
+    margin: $marginSections;
+    background-color: $col4;
+    border-radius: $border;
     padding: 0.5em 1.5em ;
     align-items: center;
 
@@ -15,11 +17,11 @@
     .placeholder__form{
         input {
             padding-left: 4%;
-            color: black;
+            color: $col3;
             width: 15em;
             height: 2em;
-            border: 2px solid #1e665c;
-            border-radius: 3px;
+            border: 2px solid $col2;
+            border-radius: $border;
             outline: none;
         }
     }
