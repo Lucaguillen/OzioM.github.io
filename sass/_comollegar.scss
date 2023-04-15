@@ -1,5 +1,7 @@
 @import "variables";
-
 #mapa {
     align-items: center;
+    .iframemapa{
+        @include tamaños (100%,550px)
+    }
 }

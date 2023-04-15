@@ -1,7 +1,5 @@
 @import "variables";
-
 /* NAV PRODUCTOS */
-
 .sectionProductos {
     display: flex; 
     flex-direction: column;
@@ -10,43 +8,59 @@
     background-color: $col4;
     border-radius: $border;
     padding: 0.5em 1.5em ;
-
+    .divh1modal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .btn{
+            --bs-btn-font-size: 1.5rem;
+            --bs-btn-bg: #{$col2};
+            --bs-btn-hover-bg:#{$col5};
+        }
+        div{
+            div{
+                .modal-body{
+                    img{
+                        @include tamaños (100%,auto)
+                    }
+                }
+                .modal-footer{
+                    .btn{
+                        --bs-btn-font-size: 1rem;
+                        --bs-btn-bg: #{$col1};
+                        --bs-btn-hover-bg:#{$col2};
+                    }
+                }
+            }
+        }
+    }
     .menu {
 
         #flechaAtras{
             display: flex;
             align-items: center;
-
             .bi-box-arrow-in-left {
-                color: $col3;
-                
-            }
-            
+                color: $col3;            
+            }           
         }
-
     }
 }
-
 /* GALERIA */
-
 .galeriacontainer {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-row-gap: 1.3em;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows:1fr;
     padding-top: 20px;
-
+    justify-content: center;
     .card {
         width: 18rem;
         transition: 0.1s ease all;
     }
-
     .card:hover{
         transform: scale(1.05);
-    }
-  
+    }  
 }
-
-
+/* MODAL OFERTA BS */

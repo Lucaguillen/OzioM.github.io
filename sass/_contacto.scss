@@ -1,5 +1,4 @@
 @import "variables";
-
 .sectionContacto {
     display: flex; 
     flex-direction: column;
@@ -9,11 +8,9 @@
     border-radius: $border;
     padding: 0.5em 1.5em ;
     align-items: center;
-
     #botoncontacto {
         margin-top: 0.5em;
-    }
-    
+    }   
     .placeholder__form{
         input {
             padding-left: 4%;

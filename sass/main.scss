@@ -3,25 +3,19 @@
 @import "comollegar";
 @import "productos";
 @import "variables";
-
 /* GENERALES */
-
 *{
     padding: 0;
-    margin: 0;
-       
+    margin: 0;       
 }
-
 body{
     background-color: $col1; 
     font-family: 'Lato', sans-serif;
-    position: relative;
-    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
-
 /* HEADER */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -30,16 +24,12 @@ body{
     border-radius: $border;
     margin: 0.5em;
     background-color: $col4;
-
     .logo__img {
         padding: 0.3em 0.3em;
     } 
 }
-
 /* BARRA BUSCADORA */
-
-.header__barra {
-    
+.header__barra {   
     input {
         padding-left: 4%;
         color: $col3;
@@ -50,10 +40,7 @@ body{
         outline: none;
     }
 }
-
-
 /* MENU NAVEGACION */
-
 .menu {
     display: flex;
     list-style: none;
@@ -62,67 +49,56 @@ body{
     margin: 0;
     padding: 0;
     transition: 0.1s ease all;
-
     .menu__item{
         text-decoration: none;
         color: $col2;
-    }   
-     
+    }       
 }
-
 .menu :hover{
     color: $col3;
-    transform: scale(1.03);
-    
+    transform: scale(1.03);   
 }
-
 /* FOOTER */
-
-
-.footer {
-    display: flex;
-    color: $col3;
-    border-top: 1px solid $col3;
-    padding: 0.1em;
-    margin-top: 0.5em;
-    justify-content:  center;
-    gap: 1em;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: $col1;
-
-    .footer__creditos {
-        position: absolute;
-        right: 1%;
-
-        .footer__creditostexto {
-            margin: 0;
-         }
-    }
-
-    .footer__iconos {
+    .footer{
         display: flex;
-        gap: 1em;
-
+        justify-content: space-between;
+        margin:$marginSections;
+        align-items: center;
+        margin-top: auto;        
+        .logo__footer{
+            a{
+                img{ 
+                    @include tamaños (auto,100px)
+                }
+            }
+        }
+        .footer__menu{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            gap: 2em;
+            .menu__item{
+                font-size: 1.3em;
+                text-decoration: none;
+                color: $col3;
+                &:hover{
+                    color: $col2; //intente añadir un transform: scale(1.03); pero no pude, investigue por internet, hasta con chatgpt y no pude con esto, si no es mucha molestia me gustaria entender por que no me funciono :) //                    
+                }                   
+            }                     
+        }       
         .footer__redes{
-            text-decoration: none;
-            color: $col3;
-                
+            a{
+                text-decoration: none;
+                margin-right: 1em;
+                img{
+                    @include tamaños (auto,50px);                   
+                }
+            }
         }
     }
-
-    
-
-    .footer__copy {
-        margin: 0;
-     }
-}
-
-
 /* BS */
- 
-.btn-primary{
+ .btn-primary{
     --bs-btn-color: #{$col4};
     --bs-btn-bg: #{$col1};
     --bs-btn-border-color: #{$col1};
@@ -138,87 +114,155 @@ body{
     --bs-btn-disabled-bg: #{$col1};
     --bs-btn-disabled-border-color: #{$col1};
 }
-
-
-/* MEDIA QUERIES */
-/* MOBILE */
-
-
-@media only screen and (max-width: 576px) {
-
-    /* Estilos generales */
-
-    .header {
-        flex-direction: column; 
+/* media queries */
+/* MD 768px BS */
+@media (max-width: 768px){
+    /* GENERALES */
+    .header{     
+        .logo{
+            a{
+                img{
+                    @include tamaños (auto,60px)                        
+                }
+            }        
+        }
+        .header__barra{
+            input{
+                width: 15em;              
+                font-size: 13px;
+            }
+        }
+        .menu{
+            font-size: 13px;
+            padding: 0px;
+        }
     }
-    .header__barra input {
-        width: 20em;
-    }
-
-
-
-    .footer__copy{
-        font-size: 10px;
-    }
-    .footer__creditostexto{
-        font-size: 8px;
-    }
-
-    .footer__iconos{
-        
+    .footer{
+        .logo__footer{
+            a{
+                img{
+                    @include tamaños(170px,auto) 
+                }
+            }
+        }
+        .footer__menu{
+            gap: 1em;
+            .menu__item{
+                font-size: 17px;
+            }
+        }
         .footer__redes{
-            font-size: 10px;
+            a{
+                img{
+                    @include tamaños (auto,23px);
+                }
+            }
         }
-
     }
-    
-
-    
-
     /* INDEX */
-
-    .centro__img {
-        width: 100%;
-    }
-
-    .industria{
-
-        .industria__img {
-            width: 45px;
-            height: 30px;
+    .centro{
+        .centro__contenedor{
+            .centro__img{
+                @include tamaños (auto,200px)
+            }
         }
-
-        .industria__text {
-            font-size: 20px;
-        }
-
     }
-    
-
-
-    .quienes__texto {
-        font-size: 12px;
+    .sectionIndex{
+        .industria{
+            .industria__img{
+                @include tamaños(75px,auto)
+            }
+            .industria__text{
+                font-size: 1.5em;   
+            }
+        }   
     }
-    .quienes__titulo{
-        font-size: 30px;
-    }
-
     /* PRODUCTOS */
-
     .galeriacontainer {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 2px;
-
         .card {
             width: 15rem;
         }
-  
     }
-
+    .sectionProductos{
+        .divh1modal{
+            .btn{
+                --bs-btn-font-size: 1rem;
+            }
+        }
+    }
     /* COMO LLEGAR */
-
-    .iframemapa {
-        width: 540px;
+    #mapa{
+        @include tamaños(auto,540px)
+    }
+}   
+@media (max-width: 576px){
+    /* SM 576px BS */
+    /* GENERALES */
+    .header{
+        .logo{
+            a{
+                img{
+                    @include tamaños (auto,45px)
+                }
+            }
+        }
+        .header__barra{
+            input{                            
+                font-size: 10px;
+            }
+        }
+        .menu{
+            font-size: 10px;           
+        }
+    }
+    .footer{
+        .logo__footer{
+            a{
+                img{
+                    @include tamaños(130px,auto) 
+                }
+            }
+        }
+        .footer__menu{
+            .menu__item{
+                font-size: 11px;
+            }
+        }
+        .footer__redes{
+            a{
+                img{
+                    @include tamaños (auto,18px);
+                }
+            }
+        }
+    }
+    /* INDEX */
+    .centro{
+        .centro__contenedor{
+            .centro__img{
+                @include tamaños (auto,160px)
+            }
+        }
+    }
+    .sectionIndex{
+        .industria{
+            .industria__img{
+                @include tamaños(50px,auto)
+            }
+            .industria__text{
+                font-size: 1.5em;   
+            }
+        }   
+    }
+    /* PRODUCTOS */
+    .galeriacontainer {
+        grid-template-columns: repeat(2, 1fr);
+        .card {
+            width: 14rem;
+        }
     }
 }
+
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,16 @@
     <meta name="keywords" content="limpieza, productos, online, uruguay, venta, reventa, precio, calidad">
 </head>
 <body>
-    
-    <!-- HEADER -->
-    <header class="header">
-            
+        <!-- HEADER -->
+    <header class="header">            
         <div class="logo"> 
             <a href="./index.html">
                 <img class="logo__img" src="./img/logo_oziom_grande.png" alt="Logo principal" width="200" height="auto">
             </a>
         </div>
-
         <div class="header__barra">
             <input type="text" placeholder="Buscar">
-        </div>
-        
+        </div>        
         <nav class="header__menu">
             <ul class="menu">
                 <li><a class="menu__item" href="./index.html">Inicio</a></li>
@@ -37,33 +34,22 @@
                 <li><a class="menu__item" href="./paginas/contacto.html">Contacto</a></li>
                 <li><a class="menu__item" href="./paginas/entrar.html">Entrar</a></li>
             </ul>
-        </nav>
-        
+        </nav>       
     </header>
-
     <!-- LOGO CENTRO DE PAGINA -->
-
     <section class="centro"> 
-
         <div class="centro__contenedor">
             <img class="centro__img" src="./img/logopaginaprincipal.png" alt="Logo grande centro">
         </div>
-
     </section>
-
     <!-- INDUSTRIA URUGUAYA -->
-
     <section class="sectionIndex">
-
-        <div class="industria">
-            <img class="industria__img" src="./img/bandera_Uruguay.png" alt="bandera de uruguay">
+        <div class="industria  animate__animated animate__backInRight">
+            <img class="industria__img " src="./img/bandera_Uruguay.png" alt="bandera de uruguay">
             <p class="industria__text" >INDUSTRIA URUGUAYA</p>
         </div>
-
     </section>
-
     <!-- CARRUSEL -->
-
     <div id="carouselExampleFade" class="sectionProductos carousel slide carousel-dark">
         <div class="carousel-inner">
         <div class="carousel-item active">
@@ -88,13 +74,10 @@
         <span class="visually-hidden">Next</span>
         </button>
     </div>
-
     <!-- QUIENES SOMOS -->
-
-    <main class="main"> 
-        
+    <main class="main">        
         <div class="quienes">
-            <H1 class="quienes__titulo">¿Quienes Somos?</H1>
+            <h1 class="quienes__titulo">¿Quienes Somos?</h1>
             <p class="quienes__texto">
                 Somos una empresa familiar uruguaya, especializada en la producción y venta de productos de limpieza para el hogar.  Desde nuestra fábrica ubicada en Montevideo, nos enorgullece ofrecer una amplia gama de productos de alta calidad a precios competitivos.
 
@@ -107,30 +90,39 @@
                 En nuestra empresa, nos enorgullece mantener una buena relación calidad/precio, para que nuestros productos sean accesibles para todos los hogares uruguayos. Somos una empresa familiar, y valoramos la importancia de mantener una buena relación con nuestros clientes, ofreciendo un servicio de atención al cliente personalizado y amable.
                 
                 En resumen, en nuestra empresa familiar uruguaya nos dedicamos a producir y proveer productos de limpieza de alta calidad a precios competitivos, a través de nuestra fábrica ubicada en Montevideo. Suministramos nuestros productos a mayoristas y supermercados en todo el país, y también ofrecemos venta directa al público a través de nuestra tienda en línea. ¡Gracias por elegirnos como su proveedor de productos de limpieza para el hogar!</p>
-        </div>
-        
-
+        </div>       
     </main>
-
     <!-- FOOTER -->
-        
-    <footer class="footer" >
-        
-        <P class="footer__copy">&COPY;2023</P>
-        
-        <div class="footer__iconos">
-            <a class="footer__redes" href="#">whatsapp</a>
-
-            <a class="footer__redes" href="#">instagram</a>
+    <footer class="footer">
+        <div class="logo__footer">
+            <a href="./index.html">
+                <img src="./img/logo_oziom_grande.png" alt="Logo en">
+            </a>
         </div>
-        
-        <div class="footer__creditos">
-            <p class="footer__creditostexto">Contacto de desarrollador web Lucaguillen@icloud.com</p>
+        <nav>
+            <ul class="footer__menu">
+                <li><a class="menu__item" href="./index.html">Inicio</a></li>
+                <li><a class="menu__item" href="./paginas/productos.html">Productos</a></li>
+                <li><a class="menu__item" href="./paginas/como_llegar.html">Como llegar</a></li>
+                <li><a class="menu__item" href="./paginas/contacto.html">Contacto</a></li>
+                <li><a class="menu__item" href="./paginas/entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+        <div class="footer__redes">
+            <a href="#">
+                <img src="./img/logo__facebook.png" alt="ir a facebook">
+            </a>
+            <a href="#">
+                <img src="./img/logo__twitter.png" alt="ir a twitter">
+            </a>
+            <a href="#">
+                <img src="./img/logo__whatsapp.png" alt="ir a whatsapp">
+            </a>
+            <a href="#">
+                <img src="./img/logo__instagram.png" alt="ir a instagram">
+            </a>
         </div>
-        
-    </footer>       
-
-    
+    </footer>  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>

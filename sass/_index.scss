@@ -1,7 +1,5 @@
 @import "variables";
-
 /* CENTRO DE PAGINA */
-
 .centro {
     display: flex;
     justify-content: center;
@@ -10,17 +8,11 @@
     background-color: $col4;
     border-radius: $border;
 }
-
 /* INDUSTRIA URUGUAYA */
-
-// mixin bien innecesario pero se hacerlo ;) // 
-
 @mixin tamaños ($width,$height){
     width: $width;
     height: $height;
 }
-
-
 .industria {
     display: flex;
     justify-content: center;
@@ -29,42 +21,32 @@
     margin: $marginSections;
     border-radius: $border;
     background-color: $col4;
-
     .industria__img {
         @include tamaños(100px,66px)
-    
     }
-
     .industria__text {
         font-size: 2em;
         font-weight: bold;
         color: $col2;
-       margin: 0;
+        margin: 0;
     }
 }
-
-
 /* QUIENES SOMOS */
-
 .quienes{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
     margin: $marginSections;
     border-radius: $border;
     padding: 0.5em;
     background-color: $col4;
-
     .quienes__titulo {
         color: $col2;
         margin: 0;
     }
-
     .quienes__texto {
         color: $col2;
         font-size: 1.2em;
         margin: 0;
-    }
-       
+    }     
 }
